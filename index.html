@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <header>
+  <div class="header-inner">
+    <a href="#top-view" class="logo">PORTFOLIO</a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#skill">Skill</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section id="top-view">
+    <div class="overlay">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-content">
+      <img src="img/24361627_s.jpg" alt="プロフィール" class="profile-pic" />
+      <p>　現在、職業訓練に通いながら、WEBデザインの基礎やバナー製作、HTML・CSSなどのスキルを学んでいます。<br>
+        中でも、バナー製作が特に好きで、シンプルで伝わりやすいデザインを意識して取り組んでいます。<br>
+        見る人にとって、「わかりやすく」「目を引く」デザインを心がけながら、日々スキルアップを目指しています。<br>
+
+        コーディングはまだ苦手な部分もあり、今回のサイトも調べたりしながら作成しました。<br>
+        ですが、構造を理解しようと試行錯誤する中で、HTMLやCSSの考え方が少しずつ身についてきていると実感しています。
+      </p>
+    </div>
+  </section>
+
+  <section id="works">
+    <h2>Works</h2>
+    <div class="works-banners">
+       <figure class="work-item">
+          <img src="img/summersale300_250.jpg" alt="バナー1" onclick="openModal(this)" />
+          <figcaption>
+            <h3>サマーセールの広告バナー</h3>
+            <p>【ターゲット】20～30代の女性<br>【ポイント】夏らしくオレンジで統一し、強調したい部分を大きく出す<br>
+               【使用ツール】Photoshop<br>【サイズ】300×250（自主制作） 
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="img/お菓子教室300_250.jpg" alt="バナー2" onclick="openModal(this)" />
+          <figcaption>
+            <h3>お菓子教室サイトへ誘導するバナー</h3>
+            <p>【ターゲット】20～50代の女性<br>
+              【ポイント】調理の様子の写真を使うことでどのような雰囲気かわかりやすくする<br>
+               【使用ツール】Photoshop<br>【サイズ】300×250（自主制作）
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="img/クラウド会計サービスの広告バナー300_250.jpg" alt="バナー3" onclick="openModal(this)" />
+          <figcaption>
+            <h3>クラウド会計サービスの広告バナー</h3>
+            <p>【ターゲット】フリーランスの方や企業の経理担当の方<br>【ポイント】青を基調に統一し、清潔感を出す。サービス名を大きくしブランド認知を優先<br>
+               【使用ツール】Photoshop<br>【サイズ】300×250（自主制作）</p>
+          </figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="img/新作スニーカーの告知300_250.jpg" alt="バナー4" onclick="openModal(this)" />
+            <figcaption>
+              <h3>新作スニーカー予約プロモーションバナー</h3>
+              <p>【ターゲット】スニーカーを好む、10～30代向け<br>【ポイント】ピンクと白を基調に、新作スニーカーと予約開始を強く出す<br>
+               【使用ツール】Photoshop<br>【サイズ】300×250（自主制作）</p>
+            </figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="img/米粉ドーナツ専門店オープンバナー.jpg" alt="バナー5" onclick="openModal(this)" />
+            <figcaption>
+              <h3>米粉ドーナツ専門店オープン告知バナー</h3>
+              <p>【ターゲット】グルテンフリーやナチュラル素材に関心のある層<br>【ポイント】シンプルで上品なデザインにし、商品画像を大きく使用<br>
+               【使用ツール】Photoshop<br>【サイズ】300×250（自主制作）
+              </p>
+            </figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="img/メガネ広告バナー.jpg" alt="バナー6" onclick="openModal(this)" />
+            <figcaption>
+              <h3>メガネブランドのSNS告知バナー</h3>
+              <p>【ターゲット】20～40代男女<br>【ポイント】シンプルで日常に自然に溶け込むデザインを意識<br>
+               【使用ツール】Photoshop<br>【サイズ】300×250（自主制作）</p>
+            </figcaption>
+        </figure>
+      </div>
+
+    <div class="works-videos">
+      <figure class="work-item">
+        <video controls src="img/スーツブランドのCM.mp4" controls></video>
+        <figcaption><h3>OWN ブランドプロモーション動画（自主制作）</h3>
+          <p>「スーツを“着る”ではなく、“纏う＝ownする”」というブランドコンセプトを訴求するためのSNS・Web用短尺プロモーション映像を制作。</p>
+        </figcaption>
+      </figure>
+      <figure class="work-item">
+        <video controls src="img/ヘッドフォンのプロモーション（自主制作）.mp4" controls></video>
+        <figcaption><h3>Freedom Audio ブランドプロモーション動画（自主制作）</h3>
+          <p>「日常のノイズから、自分だけのリズムへ。」FreedomAudioのブランドコンセプトを視覚化した、ショートプロモーション映像を制作。</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="skill">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="img/写真のフリー素材11.png" alt="Photoshop"/>
+        <h3>Photoshop</h3>
+        <p>・Adobe Certified Professional 取得<br>
+          ・画像加工・バナー制作が可能</p>
+      </div>
+      <div class="skill-item">
+        <img src="img/再生ボタン付きのカチンコアイコン.png" alt="Filmora" />
+        <h3>Filmora</h3>
+        <p>・独学で操作習得、簡単な動画編集が可能<br>
+            ・カット・BGM挿入・テロップ・トランジション対応</p>
+      </div>
+      <div class="skill-item">
+        <img src="img/HTMLタグアイコン.png" alt="HTML" />
+        <h3>HTML/CSS</h3>
+          <p>・Web制作の基礎知識を学習中<br>
+            ・ 日々スキルアップを目指している
+          </p>
+      </div>
+      <div class="skill-item">
+        <img src="img/ワードプレスのアイコン.png" alt="Wordpress" />
+        <h3>Wordpress</h3>
+        <p>・WordPressの基本操作を習得<br>
+           ・記事の投稿や編集、管理が可能<br>
+           ・日常的なサイト更新作業に対応できる<br>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 hatanaka</p>
+  </footer>
+
+    <div id="modal" onclick="closeModal()">
+    <img id="modal-img" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

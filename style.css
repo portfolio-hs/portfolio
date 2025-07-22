@@ -1,0 +1,237 @@
+
+/* --- 共通リセットと基本設定 --- */
+body {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  color: #333;
+}
+
+/* --- ヘッダー--- */
+header {
+  position: fixed;     
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #809671;
+  z-index: 1000;      
+  padding: 1em 0;
+}
+
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none; 
+  color: white;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* --- TOP--- */
+#top-view {
+  padding-top: 60px;    
+  height: calc(100vh - 200px);    
+  background: url(img/25127016_m.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+/* --- ABOUT --- */
+#about {
+  background-color: #E5E0D8;
+  padding: 4em 2em;
+  text-align: center;
+  position: relative;  
+  z-index: 10;       
+  min-height: 300px;  
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  position: relative; 
+  z-index: 10;        
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover;
+}
+
+/* --- WORKS --- */
+#works {
+  padding: 4em 2em;
+}
+
+#works h2 {
+  text-align: center;
+  margin-bottom: 1em; 
+}
+
+.works-banners {
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  padding-bottom: 1em;
+  scroll-behavior: smooth;
+}
+
+.works-videos {
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  padding-bottom: 1em;
+  scroll-behavior: smooth;
+}
+
+.work-item {
+  flex: 0 0 auto; 
+  width: 300px; 
+  background: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.work-item:hover {
+  transform: translateY(-5px);
+}
+
+.work-item img {
+  width: auto;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.work-item p {
+  text-align: left;      
+}
+
+
+.work-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* --- SKILLS --- */
+#skill {
+  background-color: #E5E0D8;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.skill-item {
+  width: 180px;
+  text-align: center;
+}
+
+.skill-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5em;
+}
+
+.skill-item p {
+  text-align: left;
+}
+
+/* --- フッター --- */
+footer {
+  background-color: #809671;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+
+
+/* --- レスポンシブ --- */
+
+/* モバイルサイズ（767px以下） */
+@media (max-width: 767px) {
+  .works-grid {
+    grid-template-columns: 1fr; 
+    gap: 1.5em;
+  }
+
+  header .header-inner {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 1em;
+    padding: 0 1em;
+    text-align: center;
+  }
+}
+
+/* タブレットサイズ（768px～1023px） */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
